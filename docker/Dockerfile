@@ -9,7 +9,7 @@
 #
 # docker run -i --rm -p 8081:8081 springboot/sample-demo
 ####
-FROM registry.access.redhat.com/ubi8/openjdk-17:1.14 AS builder
+FROM registry.access.redhat.com/ubi8/openjdk-17:1.20 AS builder
 
 # Build dependency offline to streamline build
 COPY pom.xml .
